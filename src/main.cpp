@@ -1,7 +1,6 @@
 #include <iostream>
 #include "myutil.h"
 
-
 int main() {
     /* Initialise SDL */
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
@@ -16,14 +15,19 @@ int main() {
         return 1;
     }
 
-    /* Get the window surface */
-    SDL_Surface *screenSurface = SDL_GetWindowSurface(window);
+    /* Create a renderer */
+    SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+    if (renderer == NULL)
+    {
+        std::cout << "Renderer could not be created! SDL_Error: " << SDL_GetError() << std::endl;
+        return 1;
+    }
 
-    /* Fill the window surface with a white rectangle */
-    SDL_FillRect(screenSurface, NULL, SDL_MapRGB(screenSurface->format, 0xFF, 0xFF, 0xFF));
+    /* Render maze walls */
+    renderMazeWalls(renderer, maze0); // You need to define 'maze' before calling this function
 
-    /* Update the window surface */
-    SDL_UpdateWindowSurface(window);
+    /* Present the renderer */
+    SDL_RenderPresent(renderer);
 
     /*Wait for a quit event*/
     bool quit = false;
