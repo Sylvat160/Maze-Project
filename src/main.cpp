@@ -24,11 +24,11 @@ int main() {
     }
 
     /* Render maze walls */
-    // renderMazeWalls(renderer, maze0); // You need to define 'maze' before calling this function
-    
+    renderMazeWalls(renderer, maze0); // You need to define 'maze' before calling this function
+
 
     /* Present the renderer */
-    // SDL_RenderPresent(renderer);
+    SDL_RenderPresent(renderer);
 
     /*Wait for a quit event*/
     bool quit = false;
