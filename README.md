@@ -11,8 +11,13 @@
 6. [Contributing](#contributing)
 7. [License](#license)
 
-## 1. Introduction <a name="introduction"></a>
-The Maze project is a simple game application designed to generate and render mazes for user interaction. It provides a graphical interface for navigating through the maze while avoiding obstacles.
+
+## Introduction  <a name="introduction"></a>
+
+The Maze Project is a simple game application designed to generate and render mazes for user interaction. It provides a graphical interface for navigating through the maze while avoiding obstacles. To see the project in action, visit our [Demo](#) and read the [Final Project Blog Article](#) for more details.
+
+**Authors:**
+- [Sylvain TAGNABOU](https://www.linkedin.com/in/your-linkedin-profile/)
 
 ## 2. Project Structure <a name="project-structure"></a>
 The project directory structure is organized as follows:
@@ -99,6 +104,66 @@ Contributions to the Maze project are welcome. To contribute, follow these steps
 
 ## 7. License <a name="license"></a>
 This project is licensed under the [MIT License](LICENSE). Please review the license file for more details.
+
+
+## Installation
+
+To run the Maze Project locally on your machine, follow these steps:
+
+1. Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/Sylvat160/Maze-Project.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd maze-project
+```
+
+3. Compile the project by running the following command:
+
+```bash
+make
+```
+
+4. Run the game:
+
+```bash
+./bin/maze
+```
+
+## Usage
+
+The Maze Project allows players to navigate through a maze, with the objective of reaching a designated endpoint while avoiding obstacles and enemies. Users can interact with the game using the graphical user interface provided.
+
+## Contributing
+
+Contributions to the Maze Project are welcome. If you would like to contribute, please follow these steps:
+
+1. Fork the project on GitHub.
+
+2. Create a new branch for your feature or bug fix:
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+3. Make your changes and commit them with clear messages:
+
+```bash
+git commit -m "Add your commit message here"
+```
+
+4. Push your branch to your fork:
+
+```bash
+git push origin feature/your-feature-name
+```
+
+5. Create a pull request to the main repository.
+
 
 ---
 
